@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Birdseye Technology | Innovation Lab</title>
+<link href="favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+<style>
+        .hero-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0ea5e9 100%);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .globe-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+<!-- Navigation -->
+<nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-20 items-center">
+<div class="flex items-center">
+<div class="flex-shrink-0 flex items-center">
+<img alt="Birdseye Technology Logo" class="h-8 w-auto" src="birdseyelogo_png_0101.png"/>
+<span class="ml-2 text-xl font-bold text-[#0055a5]">Birdseye Technology</span>
+</div>
+</div>
+<div class="hidden md:block">
+<div class="ml-10 flex items-center space-x-8">
+<a class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium" href="#solutions">Solutions</a>
+<a class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium" href="#howWeWork">Process</a>
+<a class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium" href="#ourDonts">Don'ts</a>
+<a class="bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition duration-300" href="#" onclick="openContactModal('sales@birdseye.technology')">Sales</a>
+</div>
+</div>
+<div class="md:hidden">
+<button aria-controls="mobile-menu" aria-expanded="false" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 focus:outline-none" type="button">
+<i class="block h-6 w-6" data-feather="menu"></i>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<div class="hero-bg relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-32" id="vanta-globe">
+<div class="globe-container" id="globe-container"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="lg:grid lg:grid-cols-12 lg:gap-8">
+<div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left" data-aos="fade-right">
+<h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
+<span class="block"><b>High performance sensing and</b></span>
+<span class="block text-blue-200">software for complex challenges</span>
+</h1>
+<p class="mt-3 text-base text-blue-100 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                        We build reusable AI, sensing, and vision systems that power real world products - <b>white label, enterprise grade, and built to last.</b>
+</p>
+<div class="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
+<div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+<a class="px-8 py-3 border border-transparent text-base font-medium rounded-full text-blue-700 bg-white hover:bg-blue-50 md:py-4 md:text-lg md:px-10 transition duration-300" href="#contact">
+                                Get Started
+                            </a>
+<a class="px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-blue-600 bg-opacity-60 hover:bg-opacity-70 md:py-4 md:text-lg md:px-10 transition duration-300" href="#solutions">
+                                Our Solutions
+                            </a>
+</div>
+</div>
+</div>
+<div class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center" data-aos="fade-left">
+<div class="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
+<img alt="Dashboard interface" class="w-full rounded-lg" src="hero_section_01.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Who We Are Section -->
+<div class="py-16 bg-gray-50 overflow-hidden" id="whoWeAre">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16" data-aos="fade-up">
+<h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Who We Are</h2>
+<p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    BirdsEye Technology develops software, sensors, and computer vision systems that are embedded into clients' products and operations - always in a white-label model.
+                </p>
+<p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+                    We partner with startups and enterprise R&amp;D/Operations teams to solve technically hard problems where reliability, performance, and integration matter more than buzzwords.
+
+We don't ship commodity apps. <b>We engineer components and systems</b> that integrate with your stack, run at the edge or in the cloud, and withstand production realities.
+                </p>
+</div>
+</div>
+</div>
+<!-- Design Section -->
+<div class="py-16 bg-gray-50" id="whiteLabelDesign">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="lg:grid lg:grid-cols-12 lg:gap-8">
+<div class="lg:col-span-6" data-aos="fade-right">
+<img alt="Team working" class="rounded-lg shadow-xl" src="design_section_01.png"/>
+</div>
+<div class="mt-12 lg:mt-0 lg:col-span-6" data-aos="fade-left">
+<h2 class="text-3xl font-extrabold text-gray-900">White-Label by Design</h2>
+<div class="mt-8">
+<div class="flex">
+<div class="flex-shrink-0">
+<div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600">
+<i data-feather="award"></i>
+</div>
+</div>
+<div class="ml-4">
+<h3 class="text-lg leading-6 font-medium text-gray-900">Your brand, your product</h3>
+<p class="mt-2 text-base text-gray-500">
+                                    Our technology is integrated under your identity and architecture.
+                                </p>
+</div>
+</div>
+<div class="mt-8">
+<div class="flex">
+<div class="flex-shrink-0">
+<div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600">
+<i data-feather="lock"></i>
+</div>
+</div>
+<div class="ml-4">
+<h3 class="text-lg leading-6 font-medium text-gray-900">Confidential engagement</h3>
+<p class="mt-2 text-base text-gray-500">
+                                    We don't publicize client names or logos.
+                                </p>
+</div>
+</div>
+<div class="flex mt-8">
+<div class="flex-shrink-0">
+<div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600">
+<i data-feather="package"></i>
+</div>
+</div>
+<div class="ml-4">
+<h3 class="text-lg leading-6 font-medium text-gray-900">Component IP</h3>
+<p class="mt-2 text-base text-gray-500">
+                                    We license our reusable components; your final product/solution IP remains yours.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Solutions Section -->
+<div class="py-16 bg-gray-50 overflow-hidden" id="solutions">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16" data-aos="fade-up">
+<h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">What We Do</h2>
+<p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Solutions By Domain
+                </p>
+<p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+                    White-label solutions that integrate seamlessly with different domains operations.
+                </p>
+</div>
+<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+<div class="feature-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="100">
+<div class="p-8">
+<div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600">
+<i data-feather="shopping-bag"></i>
+</div>
+<h3 class="mt-6 text-xl font-semibold text-gray-900">Retail</h3>
+<p class="mt-2 text-gray-500">
+ 							We enhance operational intelligence and loss prevention in physical stores<br/><br/>
+							» Computer vision retail BI (footfall, zones, dwell, conversion cues)<br/>
+							» Shelf break / out of stock detection <br/>
+							» Loss prevention workflows aided by vision<br/> 
+							» Support for autonomous / low staffed store models<br/> 
+							» Sensing customer-product interaction (privacy preserving patterns)<br/>
+</p>
+</div>
+</div>
+<div class="feature-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="200">
+<div class="p-8">
+<div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600">
+<i data-feather="truck"></i>
+</div>
+<h3 class="mt-6 text-xl font-semibold text-gray-900">Logistics</h3>
+<p class="mt-2 text-gray-500">
+                            We bring vision and sensing to fleet, yards, and warehouses<br/><br/>
+							» Inventory by vision for warehouses and DCs<br/>
+							» Trajectory reconstruction when GPS drops, using inertial cues<br/> 
+							» Yard &amp; container organization visibility via cameras<br/>
+							» Fleet monitoring (driver distraction/fatigue/posture, cabin events)<br/> 
+							» Vision assisted gate/turnstile and lane flows<br/>
+</p>
+</div>
+</div>
+<div class="feature-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="300">
+<div class="p-8">
+<div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600">
+<i data-feather="settings"></i>
+</div>
+<h3 class="mt-6 text-xl font-semibold text-gray-900">Industry</h3>
+<p class="mt-2 text-gray-500">
+                            Safety, compliance, and efficiency in harsh environments:<br/><br/> 
+							» PPE detection and work permit gating by vision<br/>
+							» Access control &amp; work authorization checks<br/>
+							» Environmental &amp; air quality monitoring integrations<br/>
+</p>
+</div>
+</div>
+<div class="feature-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="100">
+<div class="p-8">
+<div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600">
+<i data-feather="user-check"></i>
+</div>
+<h3 class="mt-6 text-xl font-semibold text-gray-900">Workforce &amp; Safety Operations</h3>
+<p class="mt-2 text-gray-500">
+                            Operational awareness without extra manual overhead:<br/><br/> 
+							» Vision based entry/exit control integrated to site policy<br/>
+							» Patrol/ronda presence and route verification<br/>
+							» Real time roster/area presence dashboards (privacy aware)<br/>
+</p>
+</div>
+</div>
+<div class="feature-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="200">
+<div class="p-8">
+<div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600">
+<i data-feather="sun"></i>
+</div>
+<h3 class="mt-6 text-xl font-semibold text-gray-900">Livestock &amp; AgTech</h3>
+<p class="mt-2 text-gray-500">
+                            Applied sensing and vision for outcomes in the field:<br/><br/> 
+							» Pregnancy monitoring workflows and data capture<br/>
+							» Custom integrations for ranch operations<br/>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Work Section -->
+<div class="py-16 bg-white" id="howWeWork">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="lg:text-center mb-16" data-aos="fade-up">
+<h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Our Process</h2>
+<p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    How We Work
+                </p>
+<p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    A transparent, collaborative approach to solution development.
+                </p>
+</div>
+<div class="mt-10">
+<div class="relative">
+<div class="hidden md:block absolute top-0 left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-200"></div>
+<div class="relative md:grid md:grid-cols-2 md:gap-8 md:items-start">
+<div class="mb-10 md:mb-0" data-aos="fade-right">
+<div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600">
+<i data-feather="search"></i>
+</div>
+<h3 class="mt-4 text-lg leading-6 font-medium text-gray-900">Co-create the solution</h3>
+<p class="mt-2 text-base text-gray-500">
+                                You bring the problem; we lead a <b>Design-Thinking</b> technical process to nail the scope, constraints, and interfaces.
+                            </p>
+</div>
+<div class="relative mb-10 md:mb-0" data-aos="fade-left" data-aos-delay="100">
+<div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600 -left-6 -top-6 md:left-auto md:right-0 md:-right-6">
+<i data-feather="target"></i>
+</div>
+<div class="ml-8 md:ml-0 md:mr-8">
+<h3 class="text-lg leading-6 font-medium text-gray-900">Neutral on tech</h3>
+<p class="mt-2 text-base text-gray-500">
+                                    We pick the right tools for your constraints (latency, cost, devices, privacy, infra) - not the other way around.
+                                </p>
+</div>
+</div>
+</div>
+<div class="relative md:grid md:grid-cols-2 md:gap-8 md:items-start mt-16">
+<div class="mb-10 md:mb-0" data-aos="fade-right" data-aos-delay="200">
+<div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600">
+<i data-feather="gift"></i>
+</div>
+<h3 class="mt-4 text-lg leading-6 font-medium text-gray-900">Deliverables you can run</h3>
+<p class="mt-2 text-base text-gray-500">
+                                We ship components, services, and integrations your engineering team can operate:<br/><br/>
+								» Deployable services (containerized when relevant)<br/>
+								» Clear interfaces and data contracts<br/>
+								» Handover with engineering notes and runbooks<br/>
+</p>
+</div>
+<div class="relative mb-10 md:mb-0" data-aos="fade-left" data-aos-delay="300">
+<div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600 -left-6 -top-6 md:left-auto md:right-0 md:-right-6">
+<i data-feather="shield"></i>
+</div>
+<div class="ml-8 md:ml-0 md:mr-8">
+<h3 class="text-lg leading-6 font-medium text-gray-900">Support policy</h3>
+<p class="mt-2 text-base text-gray-500">
+                                    We provide <b>bug fix and upgrade support to your IT/engineering team.</b> We don't run a consumer helpdesk or SAC.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Tooling Section -->
+<div class="py-16 bg-gray-50" id="ourInternalTooling">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="lg:grid lg:grid-cols-12 lg:gap-8">
+<div class="lg:col-span-6" data-aos="fade-right">
+<img alt="Team working" class="rounded-lg shadow-xl" src="tooling_section_01.png"/>
+</div>
+<div class="mt-12 lg:mt-0 lg:col-span-6" data-aos="fade-left">
+<h2 class="text-3xl font-extrabold text-gray-900">Our Internal Tooling</h2>
+<p class="mt-4 text-lg text-gray-500">
+                        Why We're Faster.
+                    </p>
+<div class="mt-8">
+<div class="flex">
+<div class="flex-shrink-0">
+<div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600">
+<i data-feather="map"></i>
+</div>
+</div>
+<div class="ml-4">
+<h3 class="text-lg leading-6 font-medium text-gray-900">The Method</h3>
+<p class="mt-2 text-base text-gray-500">
+                                    We maintain <b>reusable internal frameworks and pipelines</b> that speed up delivery and harden reliability - for vision, sensing, data flows, and testing/simulation.
+                                </p>
+</div>
+</div>
+<div class="flex mt-8">
+<div class="flex-shrink-0">
+<div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600">
+<i data-feather="check-circle"></i>
+</div>
+</div>
+<div class="ml-4">
+<h3 class="text-lg leading-6 font-medium text-gray-900">The Result</h3>
+<p class="mt-2 text-base text-gray-500">
+<b>Shorter time to value, lower risk, and consistent performance.</b> We adapt the internals to your constraints rather than forcing a one size fits all stack.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Examples Section -->
+<div class="py-16 bg-gray-50 overflow-hidden" id="proofWithoutLogos">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16" data-aos="fade-up">
+<h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Anonymized Examples</h2>
+<p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Proof Without Logos
+                </p>
+<p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+                    References available under NDA, white label only.
+                </p>
+</div>
+<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+<div class="feature-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="100">
+<div class="p-8">
+<div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600">
+<i data-feather="shopping-bag"></i>
+</div>
+<h3 class="mt-6 text-xl font-semibold text-gray-900">Retail (Autonomous format)</h3>
+<p class="mt-2 text-gray-500">
+                           Embedded vision to detect shelf anomalies and unattended items, reducing manual checks and enabling lean staffing 
+
+                        </p>
+</div>
+</div>
+<div class="feature-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="200">
+<div class="p-8">
+<div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600">
+<i data-feather="codepen"></i>
+</div>
+<h3 class="mt-6 text-xl font-semibold text-gray-900">Logistics (Warehouse)</h3>
+<p class="mt-2 text-gray-500">
+                            Camera based item location to assist cycle counts; fewer blind spots and faster reconciliation.
+                        </p>
+</div>
+</div>
+<div class="feature-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="300">
+<div class="p-8">
+<div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600">
+<i data-feather="truck"></i>
+</div>
+<h3 class="mt-6 text-xl font-semibold text-gray-900">Fleet Operations</h3>
+<p class="mt-2 text-gray-500">
+                            In cabin signals (distraction/fatigue/posture) combined with inertial cues for higher quality driver safety events.
+                        </p>
+</div>
+</div>
+<div class="feature-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="100">
+<div class="p-8">
+<div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600">
+<i data-feather="user-check"></i>
+</div>
+<h3 class="mt-6 text-xl font-semibold text-gray-900">Industrial Safety</h3>
+<p class="mt-2 text-gray-500">
+                            PPE verification gating work authorization; fewer false passes at access points.
+                        </p>
+</div>
+</div>
+<div class="feature-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300 ease-in-out" data-aos="fade-up" data-aos-delay="200">
+<div class="p-8">
+<div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600">
+<i data-feather="sun"></i>
+</div>
+<h3 class="mt-6 text-xl font-semibold text-gray-900">AgTech</h3>
+<p class="mt-2 text-gray-500">
+                            Streamlined pregnancy monitoring workflow with sensing/vision capture integrated to existing ranch tooling.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Don't Section -->
+<div class="py-16 bg-white" id="ourDonts">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="lg:text-center mb-16" data-aos="fade-up">
+<h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase"></h2>
+<p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    What We Don't Do
+                </p>
+<p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    We are not a generalist dev shop. We do not build:
+                </p>
+</div>
+<div class="mt-10">
+<div class="relative">
+<div class="hidden md:block absolute top-0 left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-200"></div>
+<div class="relative md:grid md:grid-cols-2 md:gap-8 md:items-start">
+<div class="mb-10 md:mb-0" data-aos="fade-right">
+<div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600">
+<i data-feather="smartphone"></i>
+</div>
+<h3 class="mt-4 text-lg leading-6 font-medium text-gray-900">Generic mobile apps</h3>
+<p class="mt-2 text-base text-gray-500">
+</p>
+</div>
+<div class="relative mb-10 md:mb-0" data-aos="fade-left" data-aos-delay="100">
+<div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600 -left-6 -top-6 md:left-auto md:right-0 md:-right-6">
+<i data-feather="bar-chart-2"></i>
+</div>
+<div class="ml-8 md:ml-0 md:mr-8">
+<h3 class="text-lg leading-6 font-medium text-gray-900">Marketing websites or digital marketing stacks</h3>
+<p class="mt-2 text-base text-gray-500">
+</p>
+</div>
+</div>
+</div>
+<div class="relative md:grid md:grid-cols-2 md:gap-8 md:items-start mt-16">
+<div class="mb-10 md:mb-0" data-aos="fade-right" data-aos-delay="200">
+<div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600">
+<i data-feather="shopping-cart"></i>
+</div>
+<h3 class="mt-4 text-lg leading-6 font-medium text-gray-900">Traditional e-commerce platforms</h3>
+<p class="mt-2 text-base text-gray-500">
+</p>
+</div>
+<div class="relative mb-10 md:mb-0" data-aos="fade-left" data-aos-delay="300">
+<div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-100 text-blue-600 -left-6 -top-6 md:left-auto md:right-0 md:-right-6">
+<i data-feather="pie-chart"></i>
+</div>
+<div class="ml-8 md:ml-0 md:mr-8">
+<h3 class="text-lg leading-6 font-medium text-gray-900">Commodity administrative/ERP-style systems</h3>
+<p class="mt-2 text-base text-gray-500">
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Engagement -->
+<div class="py-16 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16" data-aos="fade-up">
+<h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase"></h2>
+<p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Engagement Models
+                </p>
+</div>
+<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+<div class="bg-gray-50 p-8 rounded-lg" data-aos="fade-up" data-aos-delay="100">
+<div class="flex items-center">
+<div class="flex-shrink-0">
+<img alt="Engagement" class="h-24 w-24 rounded-full" src="whitelabel_02.jpg"/>
+</div>
+<div class="ml-4">
+<h3 class="text-lg font-medium text-gray-900">Component Licensing (white-label)</h3>
+<p class="text-blue-600"></p>
+</div>
+</div>
+<p class="mt-4 text-gray-500">
+                        Integrate our modules into your product.
+                    </p>
+</div>
+<div class="bg-gray-50 p-8 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+<div class="flex items-center">
+<div class="flex-shrink-0">
+<img alt="Engagement" class="h-24 w-24 rounded-full" src="codevelop_02.jpg"/>
+</div>
+<div class="ml-4">
+<h3 class="text-lg font-medium text-gray-900">Co-development Projects</h3>
+<p class="text-blue-600"></p>
+</div>
+</div>
+<p class="mt-4 text-gray-500">
+                        Scoped engineering to reach production.
+                    </p>
+</div>
+<div class="bg-gray-50 p-8 rounded-lg" data-aos="fade-up" data-aos-delay="300">
+<div class="flex items-center">
+<div class="flex-shrink-0">
+<img alt="Engagement" class="h-24 w-24 rounded-full" src="poc_01.jpg"/>
+</div>
+<div class="ml-4">
+<h3 class="text-lg font-medium text-gray-900">Pilot/POC » Production</h3>
+<p class="text-blue-600"></p>
+</div>
+</div>
+<p class="mt-4 text-gray-500">
+                        Validate in constrained environments, then scale.
+                    </p>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA Section -->
+<div class="hero-bg py-16" id="contact">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center" data-aos="fade-up">
+<h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                    Want to discuss a problem worth solving?
+                </h2>
+<p class="mt-3 max-w-2xl mx-auto text-xl text-blue-100 sm:mt-4">
+                    Let's discuss how we can build custom software under your brand.
+                </p>
+<div class="mt-10 sm:flex sm:justify-center">
+<div class="rounded-md shadow">
+<a class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-white hover:bg-blue-50 md:py-4 md:text-lg md:px-10 transition duration-300" href="#" onclick="openContactModal('sales@birdseye.technology')">
+                            Sales
+                        </a>
+</div>
+<div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+<a class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 bg-opacity-60 hover:bg-opacity-70 md:py-4 md:text-lg md:px-10 transition duration-300" href="#" onclick="openContactModal('sales@birdseye.technology')">
+                            Support (for existing clients' IT teams)
+                        </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="bg-gray-900">
+<div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8" id="theFooter">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div>
+<h3 class="text-white text-sm font-semibold tracking-wider uppercase">Solutions</h3>
+<ul class="mt-4 space-y-4">
+<li><a class="text-gray-400 hover:text-white text-base" href="#solutions">Retail</a></li>
+<li><a class="text-gray-400 hover:text-white text-base" href="#solutions">Logistics</a></li>
+<li><a class="text-gray-400 hover:text-white text-base" href="#solutions">Industry</a></li>
+<li><a class="text-gray-400 hover:text-white text-base" href="#solutions">Workforce &amp; Safety Operations</a></li>
+<li><a class="text-gray-400 hover:text-white text-base" href="#solutions">Livestock &amp; AgTech</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-white text-sm font-semibold tracking-wider uppercase">How We Work</h3>
+<ul class="mt-4 space-y-4">
+<li><a class="text-gray-400 hover:text-white text-base" href="#howWeWork">Co-create the solution</a></li>
+<li><a class="text-gray-400 hover:text-white text-base" href="#howWeWork">Neutral on tech</a></li>
+<li><a class="text-gray-400 hover:text-white text-base" href="#howWeWork">Deliverables you can run</a></li>
+<li><a class="text-gray-400 hover:text-white text-base" href="#howWeWork">Support policy</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-white text-sm font-semibold tracking-wider uppercase"></h3>
+<ul class="mt-4 space-y-4">
+<li><a class="text-gray-400 hover:text-white text-base" href="#"></a></li>
+<li><a class="text-gray-400 hover:text-white text-base" href="#"></a></li>
+<li><a class="text-gray-400 hover:text-white text-base" href="#"></a></li>
+<li><a class="text-gray-400 hover:text-white text-base" href="#"></a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-white text-sm font-semibold tracking-wider uppercase">Connect</h3>
+<ul class="mt-4 space-y-4">
+<li class="flex">
+<a class="text-gray-400 hover:text-white" href="#theFooter">
+<i class="h-6 w-6" data-feather="mail"></i>
+</a>
+<a class="ml-6 text-gray-400 hover:text-white" href="#theFooter">
+<i class="h-6 w-6" data-feather="calendar"></i>
+</a>
+<a class="ml-6 text-gray-400 hover:text-white" href="#theFooter">
+<i class="h-6 w-6" data-feather="coffee"></i>
+</a>
+</li>
+<li class="text-gray-400"><a class="hover:text-white" href="#" onclick="openContactModal('support@birdseye.technology')">support@birdseye.technology</a></li>
+<li class="text-gray-400"><a class="hover:text-white" href="#" onclick="openContactModal('sales@birdseye.technology')">sales@birdseye.technology</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-12 border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between">
+<p class="text-gray-400 text-base">
+                    © BirdsEye Technology. White-label engineering for applied AI, sensing, and high performance systems.<br/> 
+					United States · Serving US and LATAM clients.
+
+                </p>
+<div class="mt-4 md:mt-0">
+<a class="text-gray-400 hover:text-white text-base mr-6" href="#">Privacy Policy</a>
+<a class="text-gray-400 hover:text-white text-base mr-6" href="#">Terms of Service</a>
+<a class="text-gray-400 hover:text-white text-base" href="#">Cookie Policy</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Contact Modal -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm" id="contactModal">
+<div class="bg-white rounded-xl shadow-2xl max-w-md w-full mx-4 overflow-hidden" data-aos="zoom-in">
+<div class="p-6">
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-2xl font-bold text-gray-900">Contact Us</h3>
+<button class="text-gray-500 hover:text-gray-700" onclick="closeContactModal()">
+<i data-feather="x"></i>
+</button>
+</div>
+
+<form action="https://formsubmit.co/sales@birdseye.technology" class="space-y-4" method="POST">
+<!-- FormSubmit controls -->
+<input name="_captcha" type="hidden" value="true"/>
+<input name="_subject" type="hidden" value="New message from Birdseye site"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_next" type="hidden" value="https://www.birdseye.technology/thanks.html"/>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1" for="contactEmail">Email</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300" id="contactEmail" name="email" placeholder="you@company.com" required="" type="email"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1" for="contactPhone">Phone</label>
+<input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300" id="contactPhone" name="phone" placeholder="+1 (555) 123-4567" type="tel"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1" for="contactMessage">Message</label>
+<textarea class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300" id="contactMessage" name="message" placeholder="How can we help?" required="" rows="4"></textarea>
+</div>
+<!-- Honeypot anti-bot -->
+<div style="display:none;">
+<label for="website">Website</label>
+<input autocomplete="off" id="website" name="website" tabindex="-1" type="text"/>
+</div>
+<div class="flex space-x-4 pt-2">
+<button class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition duration-300" type="submit">
+            Send Message
+        </button>
+<button class="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded-lg transition duration-300" onclick="closeContactModal &amp;&amp; closeContactModal()" type="button">
+            Cancel
+        </button>
+</div>
+</form>
+
+</div>
+</div>
+</div>
+<script>
+        function openContactModal(recipient) {
+            const modal = document.getElementById('contactModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.getElementById('contactRecipient').value = recipient;
+            feather.replace();
+        }
+		
+        function closeContactModal() {
+            const modal = document.getElementById('contactModal');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
+            document.getElementById('contactForm').reset();
+        }
+
+        function submitContactForm(event) {
+            event.preventDefault();
+            const email = document.getElementById('contactEmail').value;
+            const phone = document.getElementById('contactPhone').value;
+            const message = document.getElementById('contactMessage').value;
+            const recipient = document.getElementById('contactRecipient').value;
+            
+            window.location.href = `mailto:${recipient}?subject=Contact%20Request&body=Email:%20${encodeURIComponent(email)}%0APhone:%20${encodeURIComponent(phone)}%0AMessage:%20${encodeURIComponent(message)}`;
+            closeContactModal();
+        }
+
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Close modal when clicking outside
+        document.getElementById('contactModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeContactModal();
+            }
+        });
+        
+        feather.replace();
+        
+        VANTA.GLOBE({
+            el: "#vanta-globe",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x3b82f6,
+            backgroundColor: 0x1e3a8a,
+            size: 0.8
+        });
+    </script>
+</div></body>
+</html>
